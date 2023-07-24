@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/banner.css">
+    <title>Unidad6</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" id="nav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Grupo02 Back-end básico</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Formularios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./doctores.html">Doctores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./pacientes.html">Pacientes</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <h1>Laboratorio calificable Unidad 6</h1>
+    <h3>Seleccione si es Doctor o paciente</h3>
+    <div id="botonesform" >
+      <h2 id="doc">Doctor</h2><h2 id="pac">Paciente</h2>
+    </div>
+    <div id="doctores" class="s shows">
+      <h2>Doctores</h2>
+        <form action="submit" id="doctorform">
+
+            <div class="row g-3 align-items-center">
+                <div class="col-auto">
+                  <label for="nombredoc" class="col-form-label">Nombres:</label>
+                </div>
+                <div class="col-auto">
+                  <input type="text" required id="nombredoc" name="nombredoc" class="form-control" aria-labelledby="passwordHelpInline">
+                </div>
+            </div>
+
+            <div class="row g-3 align-items-center">
+                <div class="col-auto">
+                  <label for="apellidodoc" class="col-form-label">Apellidos</label>
+                </div>
+                <div class="col-auto">
+                  <input type="text" required name="apellidodoc" id="apellidodoc" class="form-control" aria-labelledby="passwordHelpInline">
+                </div>
+            </div>
+
+            <div class="row g-3 align-items-center">
+                <div class="col-auto">
+                  <label for="ceduladoc" class="col-form-label">Número documento</label>
+                </div>
+                <div class="col-auto">
+                  <input type="number" required min="1000000" id="ceduladoc" name="ceduladoc" class="form-control" aria-labelledby="passwordHelpInline">
+                </div>
+            </div>
+            <label for="especialidaddoc">Especialidad</label>
+            <select name="especialidaddoc" required id="especialidaddoc">
+                <option id="seleccione" value="">Seleccione una opcion</option>
+                <option value="1">Medicina general</option>
+                <option value="2">Cardiologia</option>
+                <option value="3">Medicina interna</option>
+                <option value="4">Dermatología</option>
+                <option value="5">Rehabilitación Física</option>
+                <option value="6">Psicología</option>
+                <option value="7">Odontología</option>  
+                <option value="8">Radiología</option>              
+            </select>
+
+            <div class="row g-3 align-items-center">
+                <div class="col-auto">
+                  <label for="consultoriodoc" class="col-form-label">Consultorio</label>
+                </div>
+                <div class="col-auto">
+                  <input type="text" required id="consultoriodoc" name="consultoriodoc" class="form-control" aria-labelledby="passwordHelpInline">
+                </div>
+            </div>
+
+            <div class="row g-3 align-items-center">
+                <div class="col-auto">
+                  <label for="emaildoctor" class="col-form-label">Correo de contacto</label>
+                </div>
+                <div class="col-auto">
+                  <input type="text" required name="emaildoctor" id="emaildoctor" class="form-control" aria-labelledby="passwordHelpInline">
+                </div>
+            </div>
+            <button type="submit">Enviar</button>
+
+        </form>
+    </div>
+    <div id="pacientes" name="pacientes" class="s shows">
+      <h2>Pacientes</h2>
+        <form action="submit" id="pacform">
+            
+            <div class="row g-3 align-items-center">
+                <div class="col-auto">
+                  <label for="nomprepac" class="col-form-label">Nombres</label>
+                </div>
+                <div class="col-auto">
+                  <input type="text" required id="nombrepac" name="nombrepac" class="form-control" aria-labelledby="passwordHelpInline">
+                </div>
+            </div>
+
+            <div class="row g-3 align-items-center">
+                <div class="col-auto">
+                  <label for="apellidopac" class="col-form-label">Apellidos</label>
+                </div>
+                <div class="col-auto">
+                  <input type="text" required id="apellidopac" name="apellidopac" class="form-control" aria-labelledby="passwordHelpInline">
+                </div>
+            </div>
+
+            <div class="row g-3 align-items-center">
+                <div class="col-auto">
+                  <label for="edadpac" class="col-form-label">Edad</label>
+                </div>
+                <div class="col-auto">
+                  <input type="number" min="1" required id="edadpac" name="edadpac" class="form-control" aria-labelledby="passwordHelpInline">
+                </div>
+            </div>
+
+            <div class="row g-3 align-items-center">
+                <div class="col-auto">
+                  <label for="telefonopac" class="col-form-label">Teléfono</label>
+                </div>
+                <div class="col-auto">
+                  <input type="number" required id="telefonopac" name="telefonopac" class="form-control" aria-labelledby="passwordHelpInline">
+                </div>
+            </div>
+
+            <label for="especialidad">Especialidad</label>
+            <select name="especialidadpac" required id="especialidadpac">
+                <option id="seleccione" value="">Seleccione una opcion</option>
+                <option value="11">Medicina general</option>
+                <option value="12">Cardiologia</option>
+                <option value="13">Medicina interna</option>
+                <option value="14">Dermatología</option>
+                <option value="15">Rehabilitación Física</option>
+                <option value="16">Psicología</option>
+                <option value="17">Odontología</option>  
+                <option value="18">Radiología</option>              
+            </select>
+            <br>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <table class="table" id="tabladoc">
+      <thead>
+        <h2>Doctores</h2>
+        <tr>
+          <th scope="col">Nombres</th>
+          <th scope="col">Apellidos</th>
+          <th scope="col">N° Documento</th>
+          <th scope="col">Especialidad</th>
+          <th scope="col">Consultorio</th>
+          <th scope="col">Correo de contacto</th>
+        </tr>
+      </thead>
+      <tbody id="tbody">
+        <tr id="tbody_tr">
+          
+        </tr>
+      </tbody>
+    </table>
+    <table class="table" id="tablapac">
+      <thead>
+        <h2>Pacientes</h2>
+        <tr>
+          <th scope="col">Nombres</th>
+          <th scope="col">Apellidos</th>
+          <th scope="col">Edad</th>
+          <th scope="col">Teléfono</th>
+          <th scope="col">Especialidad</th>
+        </tr>
+      </thead>
+      <tbody id="tbody2">
+        <tr id="tbody_tr2">
+         
+        </tr>
+      </tbody>
+    </table>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<script src="../app.js"></script>
+</html>

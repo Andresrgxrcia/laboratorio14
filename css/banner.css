@@ -1,0 +1,41 @@
+*{
+    margin: 0em;
+    padding: 0em;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+h1, h3{
+    margin: 1em;
+    text-align: center;
+}
+#doc, #pac{
+    display: inline;
+    margin: 1em;
+    padding: 0.2em;
+    background-color: rgb(7, 172, 172);
+}
+body{
+    background-color: steelblue;
+}
+#botonesform{
+    text-align: center;
+}
+
+.shows{
+    overflow: hidden;
+    transition: heigth 2s;
+    height: 0;
+    margin: 0;
+    padding: 0;
+}
+.s{
+    background-color: rgb(6, 150, 95);
+    margin: 2em;
+    padding: 0.5em;
+    border-color: black;
+    border-style: solid;
+    transition: heigth 2s;
+}
+#seleccione{
+    color: rgb(55, 129, 55)
+}
