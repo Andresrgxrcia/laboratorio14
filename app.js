@@ -51,9 +51,9 @@ function regristrardoctor(event){
     doctores.push(doctor)
     doctorform.reset()
     var doctoresjson= JSON.stringify(doctores)
-    console.log(doctoresjson)
+    module.exports=doctoresjson
 
-    //Mostrar doctores
+    /*//Mostrar doctores
     var tablas=document.getElementById("tbody")
     var tabla=tablas.querySelector('tbody')
     tablas.innerHTML=""
@@ -81,7 +81,7 @@ function regristrardoctor(event){
         tuplas.appendChild(consultoriodoc1)
         tuplas.appendChild(emaildoc1)
     
-    })
+    })*/
 }
 function regristrapaciente(event){
     event.preventDefault()
@@ -101,7 +101,7 @@ function regristrapaciente(event){
     var pacientesJSON= JSON.stringify(pacientes)
     console.log(pacientesJSON)
 
-    var tablab=document.getElementById("tbody2")
+    /*var tablab=document.getElementById("tbody2")
     var tabla2=tablab.querySelector('tbody')
     tablab.innerHTML=""
     
@@ -125,7 +125,7 @@ function regristrapaciente(event){
         registros.appendChild(telefonopac1)
         registros.appendChild(especialidadpac1)
     
-    })
+    })*/
 }
 console.log(doctores)
 console.log(pacientes)
